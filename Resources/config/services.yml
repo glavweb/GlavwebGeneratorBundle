@@ -1,0 +1,8 @@
+services:
+    glavweb_generator.util.model_class_parser:
+        class: Glavweb\GeneratorBundle\Util\ModelClassParser
+        arguments: [ "@kernel" ]
+
+    glavweb_generator.helper:
+        class: Glavweb\GeneratorBundle\Helper\GeneratorHelper
+        arguments: [ "@glavweb_generator.util.model_class_parser" ]
